@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
-import { HostPage } from "../../../packages/ui/components";
+import { HostPage } from "@repo/ui"
 
 const RemoteNextPage = dynamic<{ withHostApp: boolean }>(
   () => import("remote_next/page"),
